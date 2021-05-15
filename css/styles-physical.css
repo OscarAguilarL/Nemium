@@ -1,0 +1,177 @@
+:root {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
+}
+
+body {
+  color: var(--gray30);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: var(--gray30);
+}
+
+.hero {
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ),
+    url("../img/pattern.png");
+  height: 350px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
+header {
+  font-size: 14px;
+  width: 188px;
+  color: var(--gray10);
+  position: absolute;
+  top: 64px;
+  left: -232px;
+  z-index: 1;
+  /* position: relative; /* top left bottom right z-index */
+  /* position: absolute; /* bueno para hacer ventanas modales */
+  /* position: fixed; */
+  /* position: sticky; */
+}
+
+header li {
+  margin-bottom: 16px;
+}
+
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--gray30);
+  text-decoration: underline;
+}
+
+nav details summary {
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+.wrapper {
+  width: 902px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: normal;
+  margin-top: 64px;
+  margin-bottom: 16px;
+  /* margin: 64px 10px 16px 20px; */
+}
+
+hr {
+  background: var(--gray10);
+  margin: 64px 0;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 64px 0 40px 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+blockquote {
+  margin: 32px 0;
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 16px;
+  border-left: 4px solid var(--gray30);
+}
+
+blockquote span {
+  color: var(--gray10);
+}
+
+blockquote span::before {
+  content: "-";
+}
+
+pre {
+  font-family: "Roboto";
+  background: #fec62e;
+  padding: 40px;
+  line-height: 24px;
+}
+
+.section-content {
+  margin-top: 164px;
+  counter-reset: titleList;
+}
+
+.section-content:first-of-type {
+  margin: 0;
+}
+
+.section-content ol li {
+  line-height: 24px;
+}
+.section-content ul li {
+  margin-bottom: 16px;
+}
+
+.section-content + hr {
+  display: none;
+}
+
+.section-content img {
+  margin-top: 40px;
+}
+
+.section-content img:first-of-type {
+  margin: 0;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.section-content h3::before {
+  content: counter(titleList, decimal) ". ";
+}
+
+.section-content h3::after {
+  /* Es bueno usar esto ya que no lo va a leer un screen reader */
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: var(--gray30);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
