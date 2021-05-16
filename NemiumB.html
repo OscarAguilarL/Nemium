@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Medium clone</title>
   </head>
 
@@ -109,17 +115,17 @@
             </p>
             <!-- <p> -->
             <pre>
-          &lt;!DOCTYPE html&gt;
-          &lt;html lang=&quot;en&quot;&gt;
-          &lt;head&gt;
-            &lt;meta charset=&quot;UTF-8&quot;&gt;
-            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-            &lt;title&gt;Document&lt;/title&gt;
-          &lt;/head&gt;
-          &lt;body&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-          &lt;/body&gt;
-          &lt;/html&gt;
+&lt;/body&gt;
+&lt;/html&gt;
           </pre
             >
             <!-- </p> -->
@@ -224,10 +230,81 @@
               </li>
             </ul>
           </section>
+          <section class="section-content">
+            <h2>Slider con HTML y CSS</h2>
+            <div class="slider">
+              <scroll-container class="slider-container">
+                <scroll-page class="slider-slide" id="video-1">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/eWlt6ahx480"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-2">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/eWlt6ahx480"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-3">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/eWlt6ahx480"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+              </scroll-container>
+              <div class="slider-bullet-list">
+                <a href="#video-1" class="slider-bullet"></a>
+                <a href="#video-2" class="slider-bullet"></a>
+                <a href="#video-3" class="slider-bullet"></a>
+              </div>
+            </div>
+          </section>
           <p>
             Si tienes alguna pregunta escribeme a
-            <a href="mailto:aguilop.oscar@gmail.com">mi correo.</a>
+            <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
           </p>
+          <div class="section-content">
+            <form action="" method="post" class="form">
+              <label for="name">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nombre"
+                  required
+                />
+              </label>
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Correo electrónico"
+                  required
+                />
+              </label>
+              <input type="submit" value="Suscribirme" disabled />
+            </form>
+          </div>
         </div>
       </div>
     </main>

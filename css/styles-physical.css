@@ -149,6 +149,7 @@ pre {
 .section-content img {
   margin-top: 40px;
   display: block;
+  max-width: 100%;
 }
 
 .section-content h3 {
