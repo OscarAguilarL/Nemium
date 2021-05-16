@@ -148,10 +148,7 @@ pre {
 
 .section-content img {
   margin-top: 40px;
-}
-
-.section-content img:first-of-type {
-  margin: 0;
+  display: block;
 }
 
 .section-content h3 {

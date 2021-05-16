@@ -1,0 +1,128 @@
+:root {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  --white30: #ffffff;
+  --white20: #a5a3a5;
+  --white10: #3a3539;
+  --background: #251f24;
+}
+
+body {
+  margin: 0;
+  color: var(--white30);
+  font-family: "Nunito", sans-serif;
+  background: var(--background);
+}
+
+a {
+  color: var(--white30);
+}
+
+header {
+  font-size: 14px;
+  color: var(--white30);
+}
+
+header a {
+  color: var(--white20);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--white30);
+}
+
+header li {
+  color: var(--white20);
+}
+
+nav details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3.75em;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-block: 40px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-block: 16px;
+  font-weight: 600;
+}
+
+hr {
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
+}
+
+pre {
+  background: var(--white10);
+}
+
+p {
+  color: var(--white20);
+}
+
+.hero {
+  background: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
+  height: 350px;
+}
+
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
+
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+.section-content h3::before {
+  content: counter(titleList) ". ";
+}
+
+.section-content h3::after {
+  content: "";
+  width: 32px;
+  height: 4px;
+  background: var(--white30);
+  display: inline-block;
+  /* Es bueno usar esto ya que no es algo que lea un screen reader */
+}
+
+blockquote {
+  font-size: 1.5rem;
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background: var(--white10);
+  border-radius: 8px;
+}
+
+blockquote p {
+  color: var(--white30);
+}
+
+.main hr {
+  display: none;
+}
+
+.main {
+}
+
+.wrapper {
+  inline-size: 902px;
+  margin: auto;
+}
