@@ -52,15 +52,7 @@ body {
 a {
   color: var(--white30);
 }
-.header {
-  /* background: red;
-  position: fixed; */
-  /* inset: 50px; */
-  /* inset-inline: 50px; */
-  /* inset-block: 50px; */
-  /* block-size: 500px; */
-  /* inline-size: 500px; */
-}
+
 .header-content {
   padding-inline: 20px;
 }
@@ -92,12 +84,6 @@ header a:hover {
 
 nav details summary {
   font-weight: bold;
-}
-
-h1,
-h2,
-h3 {
-  /* font-weight: normal; */
 }
 
 h1 {
@@ -211,11 +197,6 @@ blockquote p {
   display: none;
 }
 
-.main {
-  /* padding: 10px; */
-  /* border: 1px solid red; */
-}
-
 .wrapper {
   /* border: 1px solid yellow; */
   max-inline-size: 902px;
@@ -229,10 +210,6 @@ blockquote p {
 .main-content {
   padding-inline: 16px;
   /* border: 1px solid blue; */
-}
-
-.slider {
-  /* border: 1px solid red; */
 }
 
 .slider-container {
