@@ -267,6 +267,29 @@ blockquote p {
   color: var(--white20);
 }
 
+.footer {
+  background: var(--white30);
+  text-align: center;
+  /* padding-block: 3rem; */
+}
+
+.footer-content {
+  block-size: 124px;
+  padding-block-start: 48px;
+}
+
+.footer-content h2 {
+  color: var(--white10);
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-content img {
+  margin-block-start: 19px;
+  margin-inline-end: 22px;
+}
+
 @media screen and (min-width: 1366px) {
   .hero {
     block-size: 350px;
