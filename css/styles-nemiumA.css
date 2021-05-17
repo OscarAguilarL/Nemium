@@ -3,6 +3,7 @@
   --gray30: #212121;
   --gray20: #212429;
   --gray10: #616161;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -35,6 +36,37 @@ header a {
 }
 header a:hover {
   color: var(--gray30);
+}
+
+.variants {
+  padding-block-end: 50px;
+}
+
+.variants h4 {
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.variants ul {
+  list-style: none;
+  padding: 0;
+}
+
+.variants ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-block: 8px;
+  padding-inline: 8px;
+  padding-inline-end: 50px;
+}
+
+.hover,
+.variants ul li a:hover {
+  background: black;
+  color: white;
+  border-radius: 8px;
 }
 
 nav details summary {
@@ -75,7 +107,12 @@ p {
 }
 
 .hero {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url('../img/pattern.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ),
+    url("../img/pattern.png");
   block-size: 50px;
 }
 
