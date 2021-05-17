@@ -83,6 +83,37 @@ header a:hover {
   color: var(--white30);
 }
 
+.variants {
+  padding-block-end: 50px;
+}
+
+.header h4 {
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.variants ul {
+  list-style: none;
+  padding: 0;
+}
+
+.variants ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-block: 8px;
+  padding-inline: 8px;
+  padding-inline-end: 50px;
+}
+
+.hover,
+.variants ul li a:hover {
+  background: black;
+  color: white;
+  border-radius: 8px;
+}
+
 nav details summary {
   font-weight: bold;
 }

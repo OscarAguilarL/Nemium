@@ -42,7 +42,7 @@ header a:hover {
   padding-block-end: 50px;
 }
 
-.variants h4 {
+header h4 {
   font-weight: normal;
   line-height: 24px;
   text-transform: uppercase;
