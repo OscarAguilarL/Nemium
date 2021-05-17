@@ -186,21 +186,32 @@ blockquote p {
   border-radius: 50%;
 }
 
+.form {
+  margin-block-end: 100px;
+}
+
+.form h4 {
+  font-weight: normal;
+}
+
 .form input {
-  inline-size: 100%;
+  inline-size: 248px;
   border: 1px solid var(--gray30);
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 90px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 10px;
   color: var(--gray30);
   font-size: 16px;
-  display: block;
+  display: inline;
   margin-block-end: 24px;
 }
 
 .form input[type="submit"] {
-  background: #157efb;
+  background: black;
+  inline-size: 119px;
+  border-radius: 90px;
+  color: white;
   border: none;
 }
 
