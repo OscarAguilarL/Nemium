@@ -162,7 +162,7 @@ blockquote p {
 
 .main-content {
   padding-inline: 16px;
-  margin-inline-end: 50px;
+  /* margin-inline-end: 50px; */
 }
 
 .start {
