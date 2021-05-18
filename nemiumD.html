@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles-logical-nemiumB.css" />
+    <link rel="stylesheet" href="./css/styles-nemiumD.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -96,7 +96,7 @@
 
   <body>
     <div class="hero"></div>
-    <div class="header">
+    <div class="header start">
       <div class="wrapper">
         <div class="header-content">
           <header>
@@ -105,12 +105,13 @@
               <h4>Variantes del proyecto</h4>
               <ul>
                 <li><a href="index.html">Nemium A</a></li>
-                <li><a href="nemiumB.html" class="hover">Nemium B</a></li>
+                <li><a href="nemiumB.html">Nemium B</a></li>
                 <li><a href="nemiumC.html">Nemium C</a></li>
-                <li><a href="nemiumD.html">Nemium D</a></li>
+                <li><a href="nemiumD.html" class="hover">Nemium D</a></li>
                 <li><a href="nemiumE.html">Nemium E</a></li>
               </ul>
             </div>
+
             <!-- Barra de navegación -->
             <nav>
               <h4>Contenido</h4>
@@ -154,20 +155,14 @@
           <hr />
           <section class="section-content">
             <h2>Setup</h2>
-            <img
-              src="./img/google-chrome-white.png"
-              alt="Logo de Google Chrome"
-            />
+            <img src="./img/google-chrome.png" alt="Logo de Google Chrome" class="center" />
             <h3 id="google-chrome">Google Chrome</h3>
             <p>
               Chrome va a ser el navegador que utilizaremos en el curso por su
               extenso soporte de nuevos estándares y herramientas de desarrollo
               avanzadas y de amigable uso.
             </p>
-            <img
-              src="./img/vscode-white.png"
-              alt="Logo de Visual Studio Code"
-            />
+            <img src="./img/vscode.png" alt="Logo de Visual Studio Code" class="center" />
             <h3 id="vscode">Visual Studio Code</h3>
             <p>
               Visual Studio Code es el editor de texto más popular y potente del
@@ -175,7 +170,7 @@
               medio de plugins lo hace el complemento perfecto para cualquier
               programador sin importar el lenguaje en el que se desemvuelva.
             </p>
-            <img src="./img/figma-white.png" alt="Logo de Figma" />
+            <img src="./img/figma.png" alt="Logo de Figma" class="center" />
             <h3 id="figma">Figma</h3>
             <p>
               Figma es una la herramienta más popular en la actualidad para
@@ -183,7 +178,7 @@
               su fácil uso porque puede ser usado directamente desde el
               navegador.
             </p>
-            <img src="./img/github-white.png" alt="Logo de Github" />
+            <img src="./img/github.png" alt="Logo de Github" class="center" />
             <h3 id="github">Github</h3>
             <p>
               Así como en Facebook te encuentran tus amigos, en Github te
@@ -207,7 +202,7 @@
               estructura del contenido.
             </p>
             <!-- <p> -->
-            <pre>
+            <pre class="start">
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -278,7 +273,7 @@
             </p>
             <img src="./img/css.png" alt="Imagen que ilustra que es CSS" />
           </section>
-          <section class="section-content">
+          <section class="section-content start">
             <h2>Modelo de caja</h2>
             <h3>El modelo de caja está compuesto por:</h3>
             <p>
@@ -323,7 +318,7 @@
               </li>
             </ul>
           </section>
-          <section class="section-content">
+          <section class="section-content start">
             <h2>Slider con HTML y CSS</h2>
             <div class="slider">
               <scroll-container class="slider-container">
@@ -370,13 +365,14 @@
                 <a href="#video-3" class="slider-bullet"></a>
               </div>
             </div>
+            <p>
+              Si tienes alguna pregunta escribeme a
+              <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
+            </p>
           </section>
-          <p>
-            Si tienes alguna pregunta escribeme a
-            <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
-          </p>
-          <div class="section-content">
+          <div class="section-content start">
             <form action="" method="post" class="form">
+              <h4>Suscríbete a nuestro newsletter</h4>
               <label for="name">
                 <input
                   type="text"
@@ -386,16 +382,16 @@
                   required
                 />
               </label>
-              <label for="email">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Correo electrónico"
-                  required
-                />
-              </label>
-              <input type="submit" value="Suscribirme" disabled />
+                <label for="email">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Correo electrónico"
+                    required
+                  />
+                <input type="submit" value="Suscribirme" disabled />
+              </div>
             </form>
           </div>
         </div>
@@ -406,19 +402,19 @@
         <h2>&copy; Leonidas Esteban 2021</h2>
         <a href="https://instagram.com" target="_blank">
           <img
-            src="./img/instagram-icon.svg"
+            src="./img/instagram-icon-a.svg"
             alt="Icono de la red social Instagram"
           />
         </a>
         <a href="https://www.facebook.com/" target="_blank">
           <img
-            src="./img/facebook-icon.svg"
+            src="./img/facebook-icon-a.svg"
             alt="Icono de la red social Facebook"
           />
         </a>
         <a href="https://www.twitter.com/" target="_blank">
           <img
-            src="./img/twitter-icon.svg"
+            src="./img/twitter-icon-a.svg"
             alt="Icono de la red social Twitter"
           />
         </a>

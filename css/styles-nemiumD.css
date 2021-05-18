@@ -1,0 +1,288 @@
+:root {
+  font-size: 18px;
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--gray30);
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  color: var(--gray30);
+}
+
+.header-content {
+  padding-inline: 20px;
+}
+header {
+  margin-block-start: 20px;
+  font-size: 14px;
+  color: var(--white);
+}
+
+header li {
+  color: var(--gray20);
+  margin-block-end: 16px;
+}
+
+header a {
+  color: var(--gray20);
+  text-decoration: none;
+}
+header a:hover {
+  color: var(--gray30);
+}
+
+.variants {
+  padding-block-end: 50px;
+}
+
+header h4 {
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.variants ul {
+  list-style: none;
+  padding: 0;
+}
+
+.variants ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-block: 8px;
+  padding-inline: 8px;
+  padding-inline-end: 50px;
+}
+
+.hover,
+.variants ul li a:hover {
+  background: black;
+  color: white;
+  border-radius: 8px;
+}
+
+nav details summary {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 40px;
+  margin-block-start: 20px;
+  margin-block-end: 16px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-block: 40px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-block: 16px;
+}
+
+hr {
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
+}
+
+pre {
+  /* background: #fec62e; */
+  padding: 40px;
+  overflow: auto;
+  border-radius: 8px;
+  border: 10px solid #5551ff;
+  box-shadow: -10px 10px 0 0 #abaaf6;
+}
+
+p {
+  color: var(--gray20);
+}
+
+.hero {
+  background-image: linear-gradient(
+      274.51deg,
+      rgba(74, 0, 224, 0.6) 5%,
+      rgba(142, 45, 226, 0.5) 130.61%
+    ),
+    url("../img/pattern-2.png");
+  block-size: 50px;
+}
+
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
+
+.section-content {
+  counter-reset: titleList;
+}
+.section-content p {
+  color: #545454;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+.section-content h3::before {
+  content: counter(titleList, decimal) ". ";
+}
+
+blockquote {
+  margin-block: 32px;
+  border-left: 4px solid var(--gray30);
+  line-height: 32px;
+  font-size: 24px;
+  padding-inline-start: 16px;
+}
+blockquote p {
+  color: var(--gray30);
+}
+
+.main hr {
+  display: none;
+}
+
+.wrapper {
+  max-inline-size: 902px;
+  margin: auto;
+}
+
+.main-content {
+  padding-inline: 16px;
+  margin-inline-end: 50px;
+}
+
+.start {
+  text-align: start;
+}
+
+.center {
+  /* text-align: center; */
+  margin: auto;
+}
+
+.slider-container {
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background: #424242;
+  border-radius: 50%;
+}
+
+.form {
+  margin-block-end: 100px;
+}
+
+.form h4 {
+  font-weight: normal;
+}
+
+.form input {
+  inline-size: 248px;
+  border: 1px solid var(--gray30);
+  box-sizing: border-box;
+  border-radius: 90px;
+  padding-inline: 16px;
+  padding-block: 10px;
+  color: var(--gray30);
+  font-size: 16px;
+  display: inline;
+  margin-block-end: 24px;
+}
+
+.form input[type="submit"] {
+  background: #5551ff;
+  inline-size: 119px;
+  border-radius: 90px;
+  color: white;
+  border: none;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--gray20);
+}
+
+.footer {
+  background: black;
+  text-align: center;
+}
+
+.footer-content {
+  block-size: 124px;
+  padding-block-start: 48px;
+}
+
+.footer-content h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-content img {
+  color: white;
+  margin-block-start: 19px;
+  margin-inline-end: 22px;
+}
+
+@media screen and (min-width: 1366px) {
+  .hero {
+    block-size: 350px;
+  }
+  .header {
+    position: sticky;
+    inset-block-start: -45px;
+  }
+  .header-content {
+    position: relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 950px;
+    inline-size: 188px;
+  }
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+
+  .wrapper {
+    padding-inline-end: 288px;
+  }
+}

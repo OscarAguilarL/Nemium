@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles-logical-nemiumB.css" />
+    <link rel="stylesheet" href="./css/styles-nemiumE.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -95,7 +95,7 @@
   </head>
 
   <body>
-    <div class="hero"></div>
+    <!-- <div class="hero"></div> -->
     <div class="header">
       <div class="wrapper">
         <div class="header-content">
@@ -105,12 +105,13 @@
               <h4>Variantes del proyecto</h4>
               <ul>
                 <li><a href="index.html">Nemium A</a></li>
-                <li><a href="nemiumB.html" class="hover">Nemium B</a></li>
+                <li><a href="nemiumB.html">Nemium B</a></li>
                 <li><a href="nemiumC.html">Nemium C</a></li>
                 <li><a href="nemiumD.html">Nemium D</a></li>
-                <li><a href="nemiumE.html">Nemium E</a></li>
+                <li><a href="nemiumE.html" class="hover">Nemium E</a></li>
               </ul>
             </div>
+
             <!-- Barra de navegación -->
             <nav>
               <h4>Contenido</h4>
@@ -154,20 +155,14 @@
           <hr />
           <section class="section-content">
             <h2>Setup</h2>
-            <img
-              src="./img/google-chrome-white.png"
-              alt="Logo de Google Chrome"
-            />
+            <img src="./img/google-chrome-white.png" alt="Logo de Google Chrome" />
             <h3 id="google-chrome">Google Chrome</h3>
             <p>
               Chrome va a ser el navegador que utilizaremos en el curso por su
               extenso soporte de nuevos estándares y herramientas de desarrollo
               avanzadas y de amigable uso.
             </p>
-            <img
-              src="./img/vscode-white.png"
-              alt="Logo de Visual Studio Code"
-            />
+            <img src="./img/vscode-white.png" alt="Logo de Visual Studio Code" />
             <h3 id="vscode">Visual Studio Code</h3>
             <p>
               Visual Studio Code es el editor de texto más popular y potente del
@@ -194,7 +189,7 @@
             </p>
             <blockquote>
               <p>“Este es el inicio de tu carrera como Desarrollador Web”</p>
-              <p>Leonidas Esteban</p>
+              <span>Leonidas Esteban</span>
             </blockquote>
           </section>
           <hr />
@@ -377,6 +372,7 @@
           </p>
           <div class="section-content">
             <form action="" method="post" class="form">
+              <h4>Suscríbete a nuestro newsletter</h4>
               <label for="name">
                 <input
                   type="text"
@@ -386,16 +382,16 @@
                   required
                 />
               </label>
-              <label for="email">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Correo electrónico"
-                  required
-                />
-              </label>
-              <input type="submit" value="Suscribirme" disabled />
+                <label for="email">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Correo electrónico"
+                    required
+                  />
+                <input type="submit" value="Suscribirme" disabled />
+              </div>
             </form>
           </div>
         </div>
